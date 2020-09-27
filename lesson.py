@@ -85,7 +85,11 @@ class Lesson_plan():
                 'DBGrid:_ctl24:_ctl2', 'DBGrid:_ctl24:_ctl3',
                 'DBGrid:_ctl24:_ctl4'
             ]
+
+            i = 0
             for p in page:
+                i = i + 1
+                print("\n正在获取学位课信息(" + str(i) + ", 5)")
                 data_1 = {
                     '__EVENTTARGET': p,
                     '__EVENTARGUMENT': '',
@@ -112,6 +116,7 @@ class Lesson_plan():
                             t_list.append(t.string)
 
                     lesson_list[t_list[1]] = t_list[17]
+            print("获取成功\n")
 
             filename = self.xh[0:6] + '.json'
             with open(filename, 'w', encoding='utf-8') as file_obj:
