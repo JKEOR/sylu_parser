@@ -54,7 +54,7 @@ if __name__ == "__main__":
     msg = """此程序可以爬取沈阳理工大学教学网，实现自动计算绩点，查询成绩等功能。
 初次使用需要爬取教学计划，大概需要2-3分钟的时间，请耐心等待。
 初次运行会生成.json格式文件，该文件为学位课信息，请不要删除。
-开源地址:https://github.com/JKEOR/sylu_parser
+开源地址:https://github.com/jkoor/sylu_parser
 ——————by JKOR\n"""
     print(msg)
     main()
